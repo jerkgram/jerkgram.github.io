@@ -1,0 +1,11 @@
+{
+  "status": "preparing",
+  "githubRepo": "",
+  "assetPattern": "^Jerkgram-[0-9][A-Za-z0-9._-]*\\.ipa$",
+  "telegramBaseVersion": "12.9.2",
+  "minimumIOS": "",
+  "telegramChannelUrl": "https://t.me/JerkgramApp",
+  "telegramReleaseUrl": "",
+  "sourceUrl": "",
+  "sha256": ""
+}
