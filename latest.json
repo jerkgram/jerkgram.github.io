@@ -1,11 +1,23 @@
 {
+  "schemaVersion": 2,
   "status": "preparing",
-  "githubRepo": "",
+  "githubRepo": "jerkgram/Jerkgram-iOS",
   "assetPattern": "^Jerkgram-[0-9][A-Za-z0-9._-]*\\.ipa$",
+  "version": null,
+  "build": null,
   "telegramBaseVersion": "12.9.2",
-  "minimumIOS": "",
+  "minimumIOS": null,
+  "githubReleaseUrl": null,
+  "fileName": null,
+  "downloadUrl": null,
+  "size": null,
+  "sha256": null,
+  "publicSourceTag": null,
+  "sourceUrl": "https://github.com/jerkgram/Jerkgram-iOS",
+  "releaseDate": null,
   "telegramChannelUrl": "https://t.me/JerkgramApp",
-  "telegramReleaseUrl": "",
-  "sourceUrl": "",
-  "sha256": ""
+  "telegramReleaseUrl": null,
+  "communityUrl": "https://t.me/JerkgramCommunity",
+  "altStoreSourceUrl": "https://jerkgram.github.io/altstore-source.json",
+  "sideStoreSourceUrl": "https://jerkgram.github.io/altstore-source.json"
 }

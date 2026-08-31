@@ -24,9 +24,11 @@ The website is the product-facing home of Jerkgram: it presents the client, real
 ## Repository role
 
 ```text
-index.html     Production website
-latest.json    Public release pointer used by the website
-.nojekyll      GitHub Pages static-site configuration
+index.html            Production website
+latest.json           Public pointer to the canonical Stable release
+altstore-source.json  Official AltStore Classic / SideStore source metadata
+mirrors.json          Canonical and mirror distribution metadata
+.nojekyll             GitHub Pages static-site configuration
 ```
 
 Application source, release provenance, build documentation and issue tracking belong in **[`jerkgram/Jerkgram-iOS`](https://github.com/jerkgram/Jerkgram-iOS)**.
@@ -39,6 +41,10 @@ For a Stable release, the website is intended to expose two distinct actions:
 
 - **Download IPA** — direct download of the IPA asset attached to the matching GitHub Release;
 - **View on GitHub** — the canonical GitHub Release page containing release notes, provenance and source links.
+
+AltStore Classic and SideStore use the same official source metadata at [`altstore-source.json`](altstore-source.json). Both installation/update channels point to the same canonical GitHub Release IPA; SideStore does not use a separate Jerkgram feed.
+
+[`mirrors.json`](mirrors.json) records the canonical distribution endpoint and can later distinguish verified mirrors from third-party distribution without changing GitHub Releases as the release authority.
 
 The website repository does not act as a separate IPA archive.
 

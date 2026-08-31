@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "status": "preparing",
+  "canonical": {
+    "name": "GitHub Releases",
+    "type": "canonical",
+    "repository": "jerkgram/Jerkgram-iOS",
+    "releaseUrl": null,
+    "downloadUrl": null,
+    "sha256": null
+  },
+  "mirrors": []
+}
