@@ -3,6 +3,50 @@
   "subtitle": "Official Jerkgram source",
   "description": "Official source for Stable Jerkgram releases.",
   "website": "https://jerkgram.github.io/",
-  "apps": [],
+  "apps": [
+    {
+      "name": "Jerkgram",
+      "bundleIdentifier": "ph.telegra.Telegraph",
+      "developerName": "Jerkgram",
+      "subtitle": "Telegram, with more control.",
+      "localizedDescription": "Jerkgram is an independent alternative Telegram client for iOS focused on recovery, message context, customization and additional control.",
+      "iconURL": "https://raw.githubusercontent.com/jerkgram/Jerkgram-iOS/v1.0.0/Telegram/Telegram-iOS/JerkgramGlassUIPreviews/JerkgramGlassRevealPreview.png",
+      "category": "social",
+      "versions": [
+        {
+          "version": "12.9.2",
+          "buildVersion": "130",
+          "marketingVersion": "1.0.0",
+          "date": "2026-09-02T22:24:26Z",
+          "localizedDescription": "Jerkgram 1.0.0 is the first Stable release of Jerkgram. Based on Telegram for iOS 12.9.2.",
+          "downloadURL": "https://github.com/jerkgram/Jerkgram-iOS/releases/download/v1.0.0/Jerkgram-1.0.0.ipa",
+          "size": 87442889,
+          "sha256": "29d9e04735a43a5d8ea19bc56a19e00acddd1ae298568bebcb5d831444cfe8b3",
+          "minOSVersion": "13.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "aps-environment",
+          "com.apple.security.application-groups",
+          "get-task-allow",
+          "keychain-access-groups"
+        ],
+        "privacy": {
+          "NSCameraUsageDescription": "We need this so that you can take and share photos and videos.",
+          "NSContactsUsageDescription": "Telegram stores your contacts heavily encrypted in the cloud to let you connect with your friends across all your devices.",
+          "NSFaceIDUsageDescription": "You can use Face ID to unlock the app.",
+          "NSLocationAlwaysUsageDescription": "When you send your location to your friends, Telegram needs access to show them a map. You also need this to send locations from an Apple Watch.",
+          "NSLocationWhenInUseUsageDescription": "When you send your location to your friends, Telegram needs access to show them a map.",
+          "NSMicrophoneUsageDescription": "We need this so that you can record and share voice messages and videos with sound.",
+          "NSMotionUsageDescription": "When you send your location to your friends, Telegram needs access to show them a map.",
+          "NSPhotoLibraryAddUsageDescription": "We need this so that you can share photos and videos from your photo library.",
+          "NSPhotoLibraryUsageDescription": "We need this so that you can share photos and videos from your photo library.",
+          "NSSiriUsageDescription": "You can use Siri to send messages.",
+          "NSSpeechRecognitionUsageDescription": "We need this to transcribe audio messages on your request."
+        }
+      }
+    }
+  ],
   "news": []
 }
