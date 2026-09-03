@@ -1,8 +1,10 @@
 {
   "name": "Jerkgram",
+  "identifier": "io.github.jerkgram.source",
   "subtitle": "Official Jerkgram source",
   "description": "Official source for Stable Jerkgram releases.",
   "website": "https://jerkgram.github.io/",
+  "sourceURL": "https://jerkgram.github.io/altstore-source.json",
   "apps": [
     {
       "name": "Jerkgram",
