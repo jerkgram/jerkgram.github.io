@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070b12">
+<title>Support Jerkgram</title>
+<style>
+:root{--ink:#070b12;--ink2:#0b121d;--paper:#f2efe8;--paper2:#e4e6e4;--text:#f4f0e8;--dark:#10161e;--muted:#7c848e;--line:rgba(255,255,255,.11);--max:1180px;--nav-h:64px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--ink)}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Inter,Arial,sans-serif;background:var(--ink);color:var(--text);overflow-x:hidden}button,a{font:inherit}a{color:inherit;text-decoration:none}button{color:inherit}img{display:block;max-width:100%}.shell{width:min(calc(100% - 40px),var(--max));margin:0 auto}.eyebrow{font:700 11px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.2em;text-transform:uppercase}.muted{color:rgba(244,240,232,.5)}
+:focus-visible{outline:2px solid rgba(244,240,232,.8);outline-offset:4px;border-radius:8px}
+.nav-wrap{position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(7,11,18,.78);border-bottom:1px solid rgba(255,255,255,.07);backdrop-filter:blur(20px) saturate(1.15);-webkit-backdrop-filter:blur(20px) saturate(1.15)}.site-nav{height:var(--nav-h);display:flex;align-items:center;gap:32px}.brand{font-weight:720;letter-spacing:-.03em}.nav-links{display:flex;align-items:center;gap:24px;margin-left:auto}.nav-links a{color:rgba(244,240,232,.52);font-size:12px;font-weight:650;transition:color .2s ease}.nav-links a:hover,.nav-links a[aria-current="page"]{color:#fff}.nav-tools{display:flex;align-items:center;gap:18px}.lang{display:flex;align-items:center;gap:6px;color:rgba(244,240,232,.22)}.lang button{border:0;background:none;color:rgba(244,240,232,.38);padding:4px 0;font-size:11px;font-weight:750;letter-spacing:.08em;cursor:pointer}.lang button.active{color:#fff}.lang span{font-size:10px}.nav-menu-toggle{display:none;align-items:center;gap:9px;border:0;background:none;color:#fff;padding:8px 0;font-size:12px;font-weight:700;cursor:pointer}.nav-menu-toggle i{position:relative;display:block;width:14px;height:10px}.nav-menu-toggle i:before,.nav-menu-toggle i:after{content:"";position:absolute;left:0;width:14px;height:1px;background:currentColor;transition:top .2s ease,bottom .2s ease,transform .2s ease}.nav-menu-toggle i:before{top:2px}.nav-menu-toggle i:after{bottom:2px}.nav-menu-toggle[aria-expanded="true"] i:before{top:4px;transform:rotate(45deg)}.nav-menu-toggle[aria-expanded="true"] i:after{bottom:5px;transform:rotate(-45deg)}.mobile-menu{background:rgba(7,11,18,.94);border-bottom:1px solid rgba(255,255,255,.08)}.mobile-menu[hidden]{display:none}.mobile-menu-inner{display:grid}.mobile-menu a{display:flex;justify-content:space-between;align-items:center;padding:17px 0;border-top:1px solid rgba(255,255,255,.07);font-size:18px;letter-spacing:-.02em}.mobile-menu a:first-child{border-top:0}.mobile-menu-open{overflow:hidden}
+.support-hero{position:relative;padding:178px 0 122px;overflow:hidden;background:radial-gradient(840px 520px at 78% 18%,rgba(73,102,134,.22),transparent 70%),linear-gradient(180deg,#070b12,#09111b 82%,#070b12)}.support-hero:after{content:"";position:absolute;right:-15vw;top:12%;width:48vw;height:48vw;border:1px solid rgba(255,255,255,.035);border-radius:50%;box-shadow:0 0 0 80px rgba(255,255,255,.008),0 0 0 160px rgba(255,255,255,.006);pointer-events:none}.support-hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,.58fr) minmax(0,1.42fr);gap:70px;align-items:start}.support-hero h1{margin:0;font-size:clamp(76px,9.5vw,148px);line-height:.8;letter-spacing:-.08em;font-weight:760;max-width:8ch}.support-hero-copy{padding-top:12px}.support-hero-copy .lead{max-width:660px;margin:0;font-size:clamp(25px,3vw,43px);line-height:1.04;letter-spacing:-.045em;font-weight:620}.support-hero-copy .sub{max-width:620px;margin:28px 0 0;color:rgba(244,240,232,.52);font-size:16px;line-height:1.65}.support-hero-copy .quiet{margin-top:20px;color:rgba(244,240,232,.3);font:650 10px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em}
+.uses{position:relative;padding:118px 0 130px;background:var(--paper);color:var(--dark)}.section-head{display:grid;grid-template-columns:.55fr 1.45fr;gap:48px;align-items:start;margin-bottom:70px}.section-head h2{margin:0;font-size:clamp(56px,7vw,104px);line-height:.86;letter-spacing:-.07em;max-width:9ch}.section-head p{max-width:560px;margin:8px 0 0;color:#70767c;font-size:16px;line-height:1.65}.use-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(15,22,30,.14)}.use-item{min-width:0;padding:34px 36px 38px 0;border-bottom:1px solid rgba(15,22,30,.14)}.use-item:nth-child(odd){border-right:1px solid rgba(15,22,30,.14);padding-right:44px}.use-item:nth-child(even){padding-left:44px}.use-item h3{margin:0;font-size:clamp(27px,3.1vw,39px);line-height:.96;letter-spacing:-.045em}.use-item p{max-width:510px;margin:14px 0 0;color:#747a80;font-size:14px;line-height:1.62}
+.priorities{padding:116px 0;background:linear-gradient(180deg,#07101a,#090e15);border-top:1px solid rgba(255,255,255,.05)}.priorities-grid{display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:70px}.priorities h2{margin:12px 0 0;font-size:clamp(54px,6vw,88px);line-height:.88;letter-spacing:-.06em;max-width:9ch}.priorities-intro{max-width:420px;margin:22px 0 0;color:rgba(244,240,232,.42);font-size:14px;line-height:1.6}.priority-list{border-top:1px solid rgba(255,255,255,.16)}.priority-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;padding:27px 0;border-bottom:1px solid rgba(255,255,255,.12)}.priority-name{font-size:clamp(22px,2.3vw,30px);line-height:1.05;letter-spacing:-.035em}.priority-status{white-space:nowrap;color:rgba(244,240,232,.42);font:700 10px/1.3 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.11em;text-transform:uppercase}
+.promise{padding:112px 0;background:#f7f4ed;color:var(--dark)}.promise-grid{display:grid;grid-template-columns:.55fr 1.45fr;gap:48px}.promise h2{margin:0;font-size:clamp(54px,6.5vw,94px);line-height:.87;letter-spacing:-.065em;max-width:10ch}.promise-copy p{max-width:660px;margin:0;color:#61686e;font-size:18px;line-height:1.65}.promise-copy p+p{margin-top:19px}.promise-copy strong{color:#151b22}.promise-line{margin-top:32px;padding-top:22px;border-top:1px solid rgba(15,22,30,.14);font:700 11px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:#7a8085}
+.methods{padding:120px 0 128px;background:radial-gradient(740px 420px at 12% 18%,rgba(73,102,134,.18),transparent 72%),#07101a}.methods-head{display:grid;grid-template-columns:.55fr 1.45fr;gap:48px;align-items:end;margin-bottom:64px}.methods h2{margin:0;font-size:clamp(58px,7.2vw,106px);line-height:.84;letter-spacing:-.07em;max-width:8ch}.methods-head p{max-width:550px;margin:0;color:rgba(244,240,232,.45);font-size:15px;line-height:1.65}.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.method-card{position:relative;min-width:0;padding:32px;border:1px solid rgba(255,255,255,.1);border-radius:24px;background:rgba(255,255,255,.035)}.method-kicker{margin:0;color:rgba(244,240,232,.36);font:700 10px/1.3 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase}.method-card h3{margin:15px 0 0;font-size:clamp(35px,4vw,52px);line-height:.95;letter-spacing:-.05em}.method-card>p{max-width:500px;margin:14px 0 0;color:rgba(244,240,232,.46);font-size:14px;line-height:1.6}.method-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.method-action{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 15px;border:1px solid rgba(255,255,255,.14);border-radius:14px;background:rgba(255,255,255,.06);color:#fff;font-size:13px;font-weight:720;cursor:pointer;transition:background .2s ease,border-color .2s ease,transform .2s ease}.method-action:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.22);transform:translateY(-1px)}.method-action.primary{background:var(--paper);border-color:var(--paper);color:var(--dark)}.crypto-head{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:26px}.crypto-tabs{display:inline-flex;align-items:center;gap:4px;padding:3px;border:1px solid rgba(255,255,255,.1);border-radius:12px;background:rgba(255,255,255,.035)}.crypto-tab{min-height:34px;padding:0 12px;border:0;border-radius:9px;background:transparent;color:rgba(244,240,232,.43);font-size:11px;font-weight:760;letter-spacing:.02em;cursor:pointer}.crypto-tab[aria-selected="true"]{background:rgba(244,240,232,.12);color:#fff}.crypto-panel[hidden]{display:none}.crypto-layout{display:grid;grid-template-columns:minmax(0,1fr) 184px;gap:30px;align-items:center}.crypto-address{display:inline-block;max-width:100%;margin-top:22px;color:rgba(244,240,232,.72);font:700 13px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.03em;overflow-wrap:anywhere}.qr-card{display:grid;place-items:center;align-self:center;padding:0;border-radius:18px;background:#fff;overflow:hidden}.qr-card img{width:100%;height:auto}.privacy-note{margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);color:rgba(244,240,232,.28);font-size:11px;line-height:1.55}.copy-feedback{min-height:17px;margin-top:9px;color:rgba(244,240,232,.46);font:650 10px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em}
+.footer{padding:60px 0 calc(60px + env(safe-area-inset-bottom));background:#07101a;border-top:1px solid rgba(255,255,255,.06)}.footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:flex-end}.footer-copy{display:grid;gap:7px}.footer p{max-width:600px;margin:0;color:rgba(244,240,232,.35);font-size:12px;line-height:1.6}.footer .footer-analytics{color:rgba(244,240,232,.5)}.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;font-weight:700;color:rgba(244,240,232,.58)}
+@media(max-width:899px){:root{--nav-h:56px}.shell{width:min(calc(100% - 28px),var(--max))}.site-nav{gap:18px}.nav-links{display:none}.nav-tools{margin-left:auto;gap:16px}.nav-menu-toggle{display:inline-flex}.support-hero{padding:112px 0 72px}.support-hero-grid,.section-head,.priorities-grid,.promise-grid,.methods-head{grid-template-columns:1fr;gap:28px}.support-hero h1{font-size:clamp(66px,20vw,92px)}.support-hero-copy{padding-top:0}.support-hero-copy .lead{font-size:27px}.uses,.priorities,.promise,.methods{padding:68px 0}.section-head,.methods-head{margin-bottom:38px}.section-head h2,.priorities h2,.promise h2,.methods h2{font-size:clamp(50px,14vw,70px)}.use-grid{grid-template-columns:1fr}.use-item,.use-item:nth-child(odd),.use-item:nth-child(even){padding:25px 0;border-right:0}.use-item h3{font-size:29px}.priority-row{grid-template-columns:1fr;gap:10px;padding:23px 0}.priority-status{white-space:normal}.promise-copy p{font-size:16px}.method-grid{grid-template-columns:1fr}.method-card{padding:24px 20px}.crypto-head{align-items:flex-start;flex-direction:column;gap:14px}.crypto-layout{grid-template-columns:1fr;gap:24px}.qr-card{justify-self:start;width:min(236px,100%)}.method-actions{display:grid;grid-template-columns:1fr 1fr}.method-action{width:100%}.footer-grid{flex-direction:column;align-items:flex-start}}
+@media(max-width:430px){.method-actions{grid-template-columns:1fr}.crypto-tabs{width:100%}.crypto-tab{flex:1}.qr-card{width:min(220px,100%)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.method-action{transition:none}}
+</style>
+</head>
+<body data-support-event="support_page_open">
+<div class="nav-wrap">
+  <div class="shell site-nav">
+    <a class="brand" href="../">Jerkgram</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="../#features" data-i18n="navFeatures">Features</a>
+      <a href="../#download" data-i18n="navDownload">Download</a>
+      <a href="../#community" data-i18n="navCommunity">Community</a>
+      <a href="https://github.com/jerkgram/Jerkgram-iOS" target="_blank" rel="noopener"><span data-i18n="navSource">Source</span> ↗</a>
+      <a href="#top" aria-current="page" data-i18n="navSupport">Support</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang" aria-label="Language"><button type="button" data-lang="ru">RU</button><span>/</span><button type="button" data-lang="en">EN</button></div>
+      <button class="nav-menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="support-mobile-menu"><span data-menu-label data-i18n="navMenu">Menu</span><i aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="support-mobile-menu" data-mobile-menu aria-label="Mobile navigation" hidden>
+    <div class="shell mobile-menu-inner">
+      <a href="../#features" data-i18n="navFeatures">Features</a>
+      <a href="../#download" data-i18n="navDownload">Download</a>
+      <a href="../#community" data-i18n="navCommunity">Community</a>
+      <a href="https://github.com/jerkgram/Jerkgram-iOS" target="_blank" rel="noopener"><span data-i18n="navSource">Source</span> ↗</a>
+      <a href="#top" aria-current="page" data-i18n="navSupport">Support</a>
+    </div>
+  </nav>
+</div>
+<main id="top">
+<section class="support-hero">
+  <div class="shell support-hero-grid">
+    <div><p class="eyebrow muted" data-i18n="heroEyebrow">Project support</p><h1>Support Jerkgram</h1></div>
+    <div class="support-hero-copy">
+      <p class="lead" data-i18n="heroLead">Jerkgram is free and open source. If you find the project useful, you can voluntarily support its development.</p>
+      <p class="sub" data-i18n="heroBody">Contributions help cover development, server and macOS infrastructure, Apple-related costs, and other technical project expenses.</p>
+      <p class="quiet" data-i18n="heroQuiet">Optional support · no paid feature tier</p>
+    </div>
+  </div>
+</section>
+<section class="uses" id="uses">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="usesEyebrow">Infrastructure</p>
+      <div><h2 data-i18n="usesTitle">What your support helps with</h2><p data-i18n="usesLead">Jerkgram’s costs are mostly technical: environments where the client can be built, tested, distributed and kept online.</p></div>
+    </div>
+    <div class="use-grid">
+      <article class="use-item"><h3 data-i18n="serverTitle">Server infrastructure</h3><p data-i18n="serverBody">International servers for Jerkgram services, APIs, update infrastructure, development backend components, and other functionality requiring an always-on network environment.</p></article>
+      <article class="use-item"><h3 data-i18n="macTitle">macOS development</h3><p data-i18n="macBody">Full iOS development requires a macOS environment with Xcode. A persistent Apple Silicon Mac would significantly improve building, testing, and debugging Jerkgram.</p></article>
+      <article class="use-item"><h3 data-i18n="appleTitle">Apple development &amp; distribution</h3><p data-i18n="appleBody">Apple Developer Program access, certificates, and other costs associated with building, testing, and distributing an iOS application.</p></article>
+      <article class="use-item"><h3 data-i18n="projectTitle">Project infrastructure</h3><p data-i18n="projectBody">Domains, monitoring, development services, technical storage, and other infrastructure required to maintain the project.</p></article>
+    </div>
+  </div>
+</section>
+<section class="priorities" id="priorities">
+  <div class="shell priorities-grid">
+    <div><p class="eyebrow muted" data-i18n="prioritiesEyebrow">Current priorities</p><h2 data-i18n="prioritiesTitle">Current infrastructure priorities</h2><p class="priorities-intro" data-i18n="prioritiesLead">Statuses describe what would improve the project today. They are not fundraising targets.</p></div>
+    <div class="priority-list" aria-label="Current infrastructure priorities">
+      <div class="priority-row" data-priority-id="apple-silicon" data-sponsor-name="" data-sponsor-url=""><span class="priority-name" data-i18n="priorityMac">Apple Silicon development environment</span><span class="priority-status" data-i18n="prioritySeeking">Seeking sponsorship</span></div>
+      <div class="priority-row" data-priority-id="foreign-vps" data-sponsor-name="" data-sponsor-url=""><span class="priority-name" data-i18n="priorityVps">Foreign VPS infrastructure</span><span class="priority-status" data-i18n="prioritySeeking">Seeking sponsorship</span></div>
+      <div class="priority-row" data-priority-id="apple-developer" data-sponsor-name="" data-sponsor-url=""><span class="priority-name" data-i18n="priorityApple">Apple Developer Program</span><span class="priority-status" data-i18n="priorityNeeded">Needed</span></div>
+    </div>
+  </div>
+</section>
+<section class="promise" id="free">
+  <div class="shell promise-grid">
+    <p class="eyebrow" data-i18n="freeEyebrow">Free means free</p>
+    <div class="promise-copy"><h2 data-i18n="freeTitle">Support does not unlock features.</h2><p data-i18n="freeBody">Jerkgram’s core functionality remains free regardless of whether a user financially supports the project.</p><p><strong data-i18n="freeLine">Jerkgram will remain free and open source.</strong></p><div class="promise-line" data-i18n="freeNote">Support is voluntary. No subscription, no paid feature tier.</div></div>
+  </div>
+</section>
+<section class="methods" id="ways">
+  <div class="shell">
+    <div class="methods-head"><p class="eyebrow muted" data-i18n="waysEyebrow">Support</p><div><h2 data-i18n="waysTitle">Ways to support</h2><p data-i18n="waysLead">Choose a method only if you want to. Jerkgram does not receive payment details from this page.</p></div></div>
+    <div class="method-grid">
+      <article class="method-card">
+        <p class="method-kicker" data-i18n="yooKicker">RUB · Russian cards</p>
+        <h3>ЮMoney</h3>
+        <p data-i18n="yooBody">A simple option for voluntary support in rubles.</p>
+        <div class="method-actions"><a class="method-action primary" href="https://yoomoney.ru/fundraise/1K6304PANCM.260909" target="_blank" rel="noopener" data-support-event="support_yoomoney_click" data-i18n="yooAction">Support with RUB</a></div>
+      </article>
+      <article class="method-card">
+        <div class="crypto-head">
+          <p class="method-kicker" data-i18n="cryptoKicker">Crypto</p>
+          <div class="crypto-tabs" role="tablist" aria-label="Cryptocurrency network" data-i18n-aria-label="cryptoTabsLabel">
+            <button class="crypto-tab" type="button" role="tab" id="crypto-tab-ton" aria-controls="crypto-panel-ton" aria-selected="true" tabindex="0" data-crypto-tab="ton">TON</button>
+            <button class="crypto-tab" type="button" role="tab" id="crypto-tab-trc20" aria-controls="crypto-panel-trc20" aria-selected="false" tabindex="-1" data-crypto-tab="trc20">USDT TRC20</button>
+          </div>
+        </div>
+
+        <div class="crypto-panel" id="crypto-panel-ton" role="tabpanel" aria-labelledby="crypto-tab-ton" data-crypto-panel="ton">
+          <div class="crypto-layout">
+            <div>
+              <h3 data-i18n="tonTitle">TON</h3>
+              <p data-i18n="tonBody">Support via the TON network. Use this address only for TON / Toncoin and compatible TON-network assets.</p>
+              <code class="crypto-address" aria-label="TON address">UQArdz...2zVo</code>
+              <div class="method-actions">
+                <a class="method-action primary" href="ton://transfer/UQArdzNSTkjUDwvAVR9xBqRRZeFL_jsWH866XDBSFCgU2zVo" data-support-event="support_ton_wallet_open" data-i18n="tonOpen">Open in wallet</a>
+                <button class="method-action" type="button" data-crypto-copy data-copy-value="UQArdzNSTkjUDwvAVR9xBqRRZeFL_jsWH866XDBSFCgU2zVo" data-copy-label-key="tonCopy" data-support-event="support_ton_copy" data-i18n="tonCopy">Copy address</button>
+              </div>
+              <div class="copy-feedback" data-copy-feedback="ton" aria-live="polite"></div>
+            </div>
+            <div class="qr-card"><img src="./ton-wallet-qr.png" width="184" height="218" alt="TON wallet receive QR code" data-i18n-alt="tonQrAlt"></div>
+          </div>
+          <div class="privacy-note" data-i18n="tonPrivacy">Wallet-generated receive QR for Jerkgram’s public TON address. No payment data is sent by this page.</div>
+        </div>
+
+        <div class="crypto-panel" id="crypto-panel-trc20" role="tabpanel" aria-labelledby="crypto-tab-trc20" data-crypto-panel="trc20" hidden>
+          <div class="crypto-layout">
+            <div>
+              <h3 data-i18n="trcTitle">USDT TRC20</h3>
+              <p data-i18n="trcBody">Support with USDT on the TRON (TRC20) network. Send only USDT TRC20 to this address.</p>
+              <code class="crypto-address" aria-label="USDT TRC20 address">TFX4rh...96LwD</code>
+              <div class="method-actions">
+                <button class="method-action primary" type="button" data-crypto-copy data-copy-value="TFX4rhQnMgNMa8Qr1XzJDdYY7wSQZ96LwD" data-copy-label-key="trcCopy" data-support-event="support_trc20_copy" data-i18n="trcCopy">Copy address</button>
+              </div>
+              <div class="copy-feedback" data-copy-feedback="trc20" aria-live="polite"></div>
+            </div>
+            <div class="qr-card"><img src="./usdt-trc20-wallet-qr.png" width="184" height="219" alt="USDT TRC20 wallet receive QR code" data-i18n-alt="trcQrAlt"></div>
+          </div>
+          <div class="privacy-note" data-i18n="trcPrivacy">Wallet-generated receive QR for Jerkgram’s public USDT TRC20 address. No payment data is sent by this page.</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="shell footer-grid">
+    <div class="footer-copy"><p data-i18n="legal">Jerkgram is an independent project and is not an official Telegram application. Telegram is a trademark of its respective owner.</p><p class="footer-analytics" data-i18n="analyticsFooter">Site analytics: Cloudflare Web Analytics · cookie-free.</p></div>
+    <div class="footer-links"><a href="../#download" data-i18n="navDownload">Download</a><a href="https://github.com/jerkgram/Jerkgram-iOS" target="_blank" rel="noopener"><span data-i18n="navSource">Source</span> ↗</a><a href="https://t.me/JerkgramApp" target="_blank" rel="noopener">Telegram</a><a href="https://t.me/JerkgramCommunity" target="_blank" rel="noopener">Community</a><a href="#top" data-i18n="navSupport">Support</a></div>
+  </div>
+</footer>
+<script>
+const SUPPORT_EVENT_HOOKS=Object.freeze(['support_page_open','support_yoomoney_click','support_ton_copy','support_ton_wallet_open','support_trc20_copy']);
+const I18N={
+  en:{title:'Support Jerkgram',navFeatures:'Features',navDownload:'Download',navCommunity:'Community',navSource:'Source',navSupport:'Support',navMenu:'Menu',navClose:'Close',heroEyebrow:'Project support',heroLead:'Jerkgram is free and open source. If you find the project useful, you can voluntarily support its development.',heroBody:'Contributions help cover development, server and macOS infrastructure, Apple-related costs, and other technical project expenses.',heroQuiet:'Optional support · no paid feature tier',usesEyebrow:'Infrastructure',usesTitle:'What your support helps with',usesLead:'Jerkgram’s costs are mostly technical: environments where the client can be built, tested, distributed and kept online.',serverTitle:'Server infrastructure',serverBody:'International servers for Jerkgram services, APIs, update infrastructure, development backend components, and other functionality requiring an always-on network environment.',macTitle:'macOS development',macBody:'Full iOS development requires a macOS environment with Xcode. A persistent Apple Silicon Mac would significantly improve building, testing, and debugging Jerkgram.',appleTitle:'Apple development & distribution',appleBody:'Apple Developer Program access, certificates, and other costs associated with building, testing, and distributing an iOS application.',projectTitle:'Project infrastructure',projectBody:'Domains, monitoring, development services, technical storage, and other infrastructure required to maintain the project.',prioritiesEyebrow:'Current priorities',prioritiesTitle:'Current infrastructure priorities',prioritiesLead:'Statuses describe what would improve the project today. They are not fundraising targets.',priorityMac:'Apple Silicon development environment',priorityVps:'Foreign VPS infrastructure',priorityApple:'Apple Developer Program',prioritySeeking:'Seeking sponsorship',priorityNeeded:'Needed',freeEyebrow:'Free means free',freeTitle:'Support does not unlock features.',freeBody:'Jerkgram’s core functionality remains free regardless of whether a user financially supports the project.',freeLine:'Jerkgram will remain free and open source.',freeNote:'Support is voluntary. No subscription, no paid feature tier.',waysEyebrow:'Support',waysTitle:'Ways to support',waysLead:'Choose a method only if you want to. Jerkgram does not receive payment details from this page.',yooKicker:'RUB · Russian cards',yooBody:'A simple option for voluntary support in rubles.',yooAction:'Support with RUB',cryptoKicker:'Crypto',cryptoTabsLabel:'Cryptocurrency network',tonTitle:'TON',tonBody:'Support via the TON network. Use this address only for TON / Toncoin and compatible TON-network assets.',tonOpen:'Open in wallet',tonCopy:'Copy address',tonPrivacy:'Wallet-generated receive QR for Jerkgram’s public TON address. No payment data is sent by this page.',tonQrAlt:'TON wallet receive QR code',trcTitle:'USDT TRC20',trcBody:'Support with USDT on the TRON (TRC20) network. Send only USDT TRC20 to this address.',trcCopy:'Copy address',trcPrivacy:'Wallet-generated receive QR for Jerkgram’s public USDT TRC20 address. No payment data is sent by this page.',trcQrAlt:'USDT TRC20 wallet receive QR code',copied:'Copied',copyUnavailable:'Copy manually from your wallet if needed.',legal:'Jerkgram is an independent project and is not an official Telegram application. Telegram is a trademark of its respective owner.',analyticsFooter:'Site analytics: Cloudflare Web Analytics · cookie-free.'},
+  ru:{title:'Поддержать Jerkgram',navFeatures:'Функции',navDownload:'Скачать',navCommunity:'Сообщество',navSource:'Исходники',navSupport:'Поддержать',navMenu:'Меню',navClose:'Закрыть',heroEyebrow:'Поддержка проекта',heroLead:'Jerkgram остаётся бесплатным и open-source. Если проект оказался для вас полезен, вы можете добровольно поддержать его развитие.',heroBody:'Поддержка помогает оплачивать разработку, серверную и macOS-инфраструктуру, расходы, связанные с Apple, и другие технические нужды проекта.',heroQuiet:'Добровольно · без платного уровня функций',usesEyebrow:'Инфраструктура',usesTitle:'На что идёт поддержка',usesLead:'Основные расходы Jerkgram — технические: среды, в которых клиент можно собирать, тестировать, распространять и поддерживать онлайн.',serverTitle:'Серверная инфраструктура',serverBody:'Зарубежные серверы для сервисов Jerkgram, API, инфраструктуры обновлений, тестовых backend-компонентов и других функций проекта, которым требуется постоянное сетевое окружение.',macTitle:'macOS-разработка',macBody:'Для полноценной разработки iOS-клиента необходима macOS-среда с Xcode. Постоянный Apple Silicon Mac позволит быстрее собирать, тестировать и отлаживать Jerkgram.',appleTitle:'Разработка и распространение через Apple',appleBody:'Apple Developer Program, сертификаты и другие расходы, связанные со сборкой, тестированием и распространением iOS-приложения.',projectTitle:'Инфраструктура проекта',projectBody:'Домены, мониторинг, сервисы разработки, хранение технических данных и другие расходы, необходимые для поддержки проекта.',prioritiesEyebrow:'Сейчас',prioritiesTitle:'Текущие приоритеты',prioritiesLead:'Статусы показывают, что сейчас улучшило бы инфраструктуру проекта. Это не выдуманные финансовые цели.',priorityMac:'Apple Silicon development environment',priorityVps:'Foreign VPS infrastructure',priorityApple:'Apple Developer Program',prioritySeeking:'Ищем спонсора',priorityNeeded:'Необходимо',freeEyebrow:'Бесплатность проекта',freeTitle:'Поддержка не открывает функции.',freeBody:'Основные возможности Jerkgram остаются бесплатными независимо от того, поддерживает пользователь проект финансово или нет.',freeLine:'Jerkgram останется бесплатным и open-source.',freeNote:'Поддержка добровольная. Без подписки и платного уровня функций.',waysEyebrow:'Поддержка',waysTitle:'Поддержать проект',waysLead:'Выберите способ только если сами хотите помочь. Jerkgram не получает платёжные данные с этой страницы.',yooKicker:'RUB · Российские карты',yooBody:'Простой способ добровольно поддержать проект в рублях.',yooAction:'Поддержать в рублях',cryptoKicker:'Криптовалюта',cryptoTabsLabel:'Сеть криптовалюты',tonTitle:'TON',tonBody:'Поддержка в сети TON. Используйте этот адрес только для TON / Toncoin и совместимых активов сети TON.',tonOpen:'Открыть в кошельке',tonCopy:'Скопировать адрес',tonPrivacy:'QR-код получен из кошелька для публичного TON-адреса Jerkgram. Эта страница не отправляет платёжные данные.',tonQrAlt:'QR-код TON для получения перевода',trcTitle:'USDT TRC20',trcBody:'Поддержка через USDT в сети TRON (TRC20). Отправляйте на этот адрес только USDT TRC20.',trcCopy:'Скопировать адрес',trcPrivacy:'QR-код получен из кошелька для публичного USDT TRC20-адреса Jerkgram. Эта страница не отправляет платёжные данные.',trcQrAlt:'QR-код USDT TRC20 для получения перевода',copied:'Скопировано',copyUnavailable:'При необходимости скопируйте адрес вручную в кошельке.',legal:'Jerkgram — независимый проект и не является официальным приложением Telegram. Telegram — товарный знак соответствующего правообладателя.',analyticsFooter:'Аналитика сайта: Cloudflare Web Analytics · без cookies.'}
+};
+function setLang(lang){
+  if(!I18N[lang])lang='en';
+  document.documentElement.lang=lang;
+  try{localStorage.setItem('jg_lang',lang);}catch{}
+  document.title=I18N[lang].title;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const value=I18N[lang][el.dataset.i18n];if(value)el.textContent=value;});
+  document.querySelectorAll('[data-i18n-alt]').forEach(el=>{const value=I18N[lang][el.dataset.i18nAlt];if(value)el.setAttribute('alt',value);});
+  document.querySelectorAll('[data-i18n-aria-label]').forEach(el=>{const value=I18N[lang][el.dataset.i18nAriaLabel];if(value)el.setAttribute('aria-label',value);});
+  document.querySelectorAll('[data-lang]').forEach(button=>button.classList.toggle('active',button.dataset.lang===lang));
+  updateMobileMenuLabel();
+}
+function initialLanguage(){
+  let saved='';
+  try{saved=localStorage.getItem('jg_lang')||'';}catch{}
+  if(saved==='ru'||saved==='en')return saved;
+  return (navigator.language||'en').toLowerCase().startsWith('ru')?'ru':'en';
+}
+const menuToggle=document.querySelector('[data-menu-toggle]');
+const mobileMenu=document.querySelector('[data-mobile-menu]');
+function updateMobileMenuLabel(){const label=document.querySelector('[data-menu-label]');if(!label)return;const lang=document.documentElement.lang==='ru'?'ru':'en';const open=menuToggle?.getAttribute('aria-expanded')==='true';label.textContent=I18N[lang][open?'navClose':'navMenu'];}
+function setMobileMenuOpen(open){if(!menuToggle||!mobileMenu)return;menuToggle.setAttribute('aria-expanded',String(Boolean(open)));mobileMenu.hidden=!open;document.body.classList.toggle('mobile-menu-open',Boolean(open));updateMobileMenuLabel();}
+document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>setLang(button.dataset.lang)));
+menuToggle?.addEventListener('click',()=>setMobileMenuOpen(menuToggle.getAttribute('aria-expanded')!=='true'));
+mobileMenu?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setMobileMenuOpen(false)));
+document.addEventListener('keydown',event=>{if(event.key==='Escape')setMobileMenuOpen(false);});
+window.addEventListener('resize',()=>{if(window.innerWidth>=900)setMobileMenuOpen(false);});
+function setCryptoTab(name,focus=false){
+  const tabs=[...document.querySelectorAll('[data-crypto-tab]')];
+  const panels=[...document.querySelectorAll('[data-crypto-panel]')];
+  if(!tabs.some(tab=>tab.dataset.cryptoTab===name))return;
+  tabs.forEach(tab=>{
+    const active=tab.dataset.cryptoTab===name;
+    tab.setAttribute('aria-selected',String(active));
+    tab.tabIndex=active?0:-1;
+    if(active&&focus)tab.focus();
+  });
+  panels.forEach(panel=>{panel.hidden=panel.dataset.cryptoPanel!==name;});
+}
+document.querySelectorAll('[data-crypto-tab]').forEach(tab=>{
+  tab.addEventListener('click',()=>setCryptoTab(tab.dataset.cryptoTab));
+  tab.addEventListener('keydown',event=>{
+    if(!['ArrowLeft','ArrowRight'].includes(event.key))return;
+    event.preventDefault();
+    const tabs=[...document.querySelectorAll('[data-crypto-tab]')];
+    const index=tabs.indexOf(tab);
+    const delta=event.key==='ArrowRight'?1:-1;
+    const next=tabs[(index+delta+tabs.length)%tabs.length];
+    setCryptoTab(next.dataset.cryptoTab,true);
+  });
+});
+async function copyCryptoAddress(button){
+  const value=button?.dataset.copyValue||'';
+  const labelKey=button?.dataset.copyLabelKey||'tonCopy';
+  const panel=button?.closest('[data-crypto-panel]');
+  const feedback=panel?.querySelector('[data-copy-feedback]');
+  if(!button||!value)return;
+  let copied=false;
+  if(navigator.clipboard?.writeText){try{await navigator.clipboard.writeText(value);copied=true;}catch{}}
+  if(!copied){
+    const textarea=document.createElement('textarea');textarea.value=value;textarea.setAttribute('readonly','');textarea.style.position='fixed';textarea.style.opacity='0';textarea.style.pointerEvents='none';document.body.appendChild(textarea);textarea.select();
+    try{copied=document.execCommand('copy');}catch{}
+    textarea.remove();
+  }
+  const lang=document.documentElement.lang==='ru'?'ru':'en';
+  const original=I18N[lang][labelKey]||I18N[lang].tonCopy;
+  if(copied){
+    button.textContent=I18N[lang].copied;
+    if(feedback)feedback.textContent=I18N[lang].copied;
+    setTimeout(()=>{
+      const liveLang=document.documentElement.lang==='ru'?'ru':'en';
+      button.textContent=I18N[liveLang][labelKey]||I18N[liveLang].tonCopy;
+      if(feedback)feedback.textContent='';
+    },1200);
+  }else{
+    if(feedback)feedback.textContent=I18N[lang].copyUnavailable;
+    button.textContent=original;
+  }
+}
+document.querySelectorAll('[data-crypto-copy]').forEach(button=>button.addEventListener('click',()=>copyCryptoAddress(button)));
+setLang(initialLanguage());
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "256cb34cd79d4f419bc2612d9a0568b3"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
