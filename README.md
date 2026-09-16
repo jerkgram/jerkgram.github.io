@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://jerkgram.github.io/"><strong>Open website</strong></a> ·
+  <a href="https://jerkgram.app/"><strong>Open website</strong></a> ·
   <a href="https://github.com/jerkgram/Jerkgram-iOS"><strong>iOS source</strong></a> ·
   <a href="https://github.com/jerkgram/Jerkgram-iOS/releases"><strong>Releases</strong></a> ·
   <a href="https://t.me/JerkgramApp"><strong>Stable channel</strong></a> ·
@@ -17,7 +17,7 @@
 
 # Jerkgram website
 
-This repository publishes the official Jerkgram website at **[jerkgram.github.io](https://jerkgram.github.io/)** through GitHub Pages.
+This repository publishes the official Jerkgram website at **[jerkgram.app](https://jerkgram.app/)** through GitHub Pages.
 
 The website is the product-facing home of Jerkgram: it presents the client, real interface material, release entry points, community links and source transparency without duplicating the full application source tree.
 
