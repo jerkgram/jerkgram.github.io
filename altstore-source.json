@@ -3,8 +3,8 @@
   "identifier": "io.github.jerkgram.source",
   "subtitle": "Official Jerkgram source",
   "description": "Official source for Stable Jerkgram releases.",
-  "website": "https://jerkgram.github.io/",
-  "sourceURL": "https://jerkgram.github.io/altstore-source.json",
+  "website": "https://jerkgram.app/",
+  "sourceURL": "https://jerkgram.app/altstore-source.json",
   "apps": [
     {
       "name": "Jerkgram",
@@ -15,6 +15,17 @@
       "iconURL": "https://raw.githubusercontent.com/jerkgram/Jerkgram-iOS/v1.0.2/Telegram/Telegram-iOS/JerkgramGlassUIPreviews/JerkgramGlassRevealPreview.png",
       "category": "social",
       "versions": [
+        {
+          "version": "13.0",
+          "buildVersion": "163",
+          "marketingVersion": "1.1.0",
+          "date": "2026-10-21T04:42:39Z",
+          "localizedDescription": "Jerkgram 1.1.0 Stable. Based on Telegram for iOS 13.0.",
+          "downloadURL": "https://github.com/jerkgram/Jerkgram-iOS/releases/download/v1.1.0/Jerkgram-1.1.0.ipa",
+          "size": 93641504,
+          "sha256": "9c20a01417784d92973d5ae862e35aec827484369ee1e8c2bc3e6997f74dc61a",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "12.9.2",
           "buildVersion": "138",
