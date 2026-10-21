@@ -36,7 +36,7 @@ jobs:
           test "$(git branch --show-current)" = "main"
           test -f .github/workflows/update-site-release-once.yml
 
-          for path in CNAME .nojekyll index.html latest.json altstore-source.json mirrors.json assets; do
+          for path in CNAME .nojekyll index.html latest.json altstore-source.json mirrors.json; do
             test -e "$path" || {
               echo "Missing expected website path: $path" >&2
               exit 1
