@@ -1,0 +1,29 @@
+name: Update Jerkgram website for 1.2.0 once
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/update-site-release-once.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: jerkgram-v1.2.0-site-publish
+  cancel-in-progress: false
+jobs:
+  update-site:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ secrets.JERKGRAM_RELEASE_TOKEN || github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.JERKGRAM_RELEASE_TOKEN || github.token }}
+      - name: Verify published release and update existing feeds
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REPOSITORY" = jerkgram/jerkgram.github.io
+          for file in CNAME .nojekyll index.html latest.json altstore-source.json mirrors.json; do test -f "$file"; done
+          python3 .github/update_site_120.py
