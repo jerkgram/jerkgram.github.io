@@ -16,6 +16,17 @@
       "category": "social",
       "versions": [
         {
+          "version": "13.2",
+          "buildVersion": "183",
+          "marketingVersion": "1.2.0",
+          "date": "2026-11-14T01:56:41Z",
+          "localizedDescription": "Jerkgram 1.2.0 Stable. Based on Telegram for iOS 13.2.",
+          "downloadURL": "https://github.com/jerkgram/Jerkgram-iOS/releases/download/v1.2.0/Jerkgram-1.2.0.ipa",
+          "size": 101719687,
+          "sha256": "4c520eb3cf8cade914903a1cdc08f54c7b0dc73c8916dbec6361bfe8f76254f1",
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "13.0",
           "buildVersion": "163",
           "marketingVersion": "1.1.0",

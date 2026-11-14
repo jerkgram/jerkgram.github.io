@@ -5,9 +5,9 @@
     "name": "GitHub Releases",
     "type": "canonical",
     "repository": "jerkgram/Jerkgram-iOS",
-    "releaseUrl": "https://github.com/jerkgram/Jerkgram-iOS/releases/tag/v1.1.0",
-    "downloadUrl": "https://github.com/jerkgram/Jerkgram-iOS/releases/download/v1.1.0/Jerkgram-1.1.0.ipa",
-    "sha256": "9c20a01417784d92973d5ae862e35aec827484369ee1e8c2bc3e6997f74dc61a"
+    "releaseUrl": "https://github.com/jerkgram/Jerkgram-iOS/releases/tag/v1.2.0",
+    "downloadUrl": "https://github.com/jerkgram/Jerkgram-iOS/releases/download/v1.2.0/Jerkgram-1.2.0.ipa",
+    "sha256": "4c520eb3cf8cade914903a1cdc08f54c7b0dc73c8916dbec6361bfe8f76254f1"
   },
   "mirrors": []
 }
